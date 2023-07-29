@@ -21,8 +21,25 @@ body {
     margin: 0 auto;
 }
 
+header {
+    border-bottom: 1px solid var(--cornflower, #e7e9fc);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+
+    gap: 332px;
+}
+
 .section {
     padding: 120px 0px;
+}
+
+.nav {
+    display: inline-flex;
+    gap: 76px;
+    align-items: center;
 }
 
 .logo-header {
@@ -33,6 +50,7 @@ body {
     font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    padding: 24px 0px;
 }
 
 .logo-header:hover,
@@ -49,6 +67,19 @@ body {
 
 .logo-web {
     color: var(--brand-logo-color);
+}
+
+.menu-list {
+    display: flex;
+    padding: 24px 0px;
+    margin: 0;
+    display: inline-flex;
+    gap: 40px;
+}
+
+.address {
+    display: inline-flex;
+    gap: 40px;
 }
 
 .menu,
@@ -101,6 +132,9 @@ body {
     font-family: "Roboto", sans-serif;
     cursor: pointer;
     letter-spacing: 0.04em;
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .button-studio:hover,
@@ -126,6 +160,16 @@ body {
     color: #ffffff;
 }
 
+.offers {
+    display: flex;
+    gap: 24px;
+}
+
+.offer-position {
+    display: flex;
+    flex-direction: column;
+}
+
 .offers .offer {
     font-weight: 500;
     font-size: 20px;
@@ -141,6 +185,15 @@ body {
     letter-spacing: 0.02em;
 }
 
+.offer {
+    margin: 0;
+}
+
+.offer-description {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
 .what-are-we-doing,
 .our-team {
     font-size: 36px;
@@ -151,8 +204,37 @@ body {
     letter-spacing: 0.02em;
 }
 
+.what-are-we-doing-list {
+    display: flex;
+    gap: 24px;
+}
+
 .our-team-section {
     background-color: #f4f4fd;
+}
+
+.our-team-list {
+    display: flex;
+    gap: 24px;
+}
+
+.our-team-card {
+    background-color: #ffffff;
+    border-color: #434455;
+    border: 0 1px 1px 1px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+        0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+        0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.our-team-name {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
+    gap: 8px;
 }
 
 .name {
@@ -162,6 +244,7 @@ body {
     text-align: center;
     color: var(--brand-color);
     letter-spacing: 0.02em;
+    margin: 0;
 }
 
 .position {
@@ -170,6 +253,7 @@ body {
     text-align: center;
     color: var(--brand-color-2);
     letter-spacing: 0.02em;
+    margin: 0;
 }
 
 .portfolio-elements .portfolio-elements-heading {
@@ -188,6 +272,14 @@ body {
 
 .footer {
     background-color: var(--brand-color);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 100px 1020px 100px 156px;
+    margin: 0;
 }
 
 .footer-text {
